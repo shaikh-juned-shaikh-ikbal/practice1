@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Square pattrern in javascript</h2>
+    <input id="squar" type="number" placeholder="Enter your number">
+    <button onclick="ptarunSq()">print</button>
+    <p id="demo"></p>
+    
+</body>
+<script>
+     function ptarunSq() {
+         let n = Number(document.getElementById("squar").value);
+         let string = '';
+         for (let i = 0; i < n; i++) {
+             for (let j = 0; j < n; j++) {
+                 string += "*";
+                 console.log(string);
+             }
+             string += "<br>";
+         }
+         document.getElementById("demo").innerHTML = string;
+     }
+
+
+    //    practic
+
+    /* let k = 5;
+     let text = '';
+     for (let i = 0; i < k; i++) {
+         for (let j = 0; j < k; j++){
+              text +="*";
+         }
+         text +="<br>";
+     }
+     document.write(text)*/
+
+
+    //        practice
+   /* let jk = 10;
+    let text1 = " ";
+    for(let x = 0; x<jk; x++){ //for row
+    for (let y = 0; y < jk; y++) {//for colume
+        text1 += "*" ;
+    }
+    text1 +="<br>"
+    }
+    document.write(text1)*/
+</script>
+
+</html>
